@@ -1,0 +1,119 @@
+.form {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.form-box {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.Phonebook {
+  transition: all 0.5s;
+  font-variation-settings: "wght" 900, "ital" 1;
+  font-size: 100px;
+  text-align: center;
+  color: #b966ff;
+  font-family: "Meta", sans-serif;
+  text-shadow: 
+    0 0 10px #b966ff,
+    0 0 20px #9b4dff,
+    0 0 40px #8a33ff,
+    0 0 80px #7700ff;
+  cursor: pointer;
+  margin: 0;
+}
+
+.Phonebook:hover {
+  text-shadow: 
+    0 0 20px #d7a4ff,
+    0 0 40px #b066ff,
+    0 0 60px #9b33ff,
+    0 0 100px #7f00ff;
+  transform: scale(1.02);
+}
+
+.input-wrapper {
+  position: relative;
+  width: 280px;
+  height: 30px;
+  display: block;
+}
+
+.styled-input {
+  width: 100%;
+  height: 100%;
+  padding: 16px 12px 0 12px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #6f39ff;
+  background: #100022;
+  border-radius: 4px 4px 0 0;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  color: #e0c7ff;
+  box-shadow: 0 0 10px rgba(111, 57, 255, 0.2);
+}
+
+.styled-input:focus {
+  outline: none;
+  border-color: #b366ff;
+  background: #15002e;
+  box-shadow: 0 0 15px #9b4dff;
+}
+
+.input-label {
+  position: absolute;
+  left: 12px;
+  top: 18px;
+  font-size: 16px;
+  color: #7d68a9;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.styled-input:focus + .input-label,
+.styled-input:not(:placeholder-shown) + .input-label {
+  top: 4px;
+  font-size: 12px;
+  color: #b366ff;
+  text-shadow: 0 0 5px #b366ff;
+}
+
+.button {
+  background: linear-gradient(90deg, #35006b, #6400d9);
+  border-radius: 999px;
+  box-shadow: 0 0 15px #7b33ff;
+  color: #e0c7ff;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: none;
+  padding: 10px 24px;
+  user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: none;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 10px #b966ff;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #6400d9, #a100ff);
+  box-shadow: 0 0 25px #b966ff;
+  transform: translateY(-2px);
+}
